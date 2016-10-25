@@ -1,0 +1,42 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.header {
+	margin-bottom:20px;
+}
+
+.header li {
+	font-size:20px;
+	margin-right:20px;
+}
+
+.header a {
+	color:black;
+}
+
+.content {
+	font-size:16px;
+}
+
+.content div {
+	display:inline-block;
+	float:none;
+	vertical-align:middle;
+}
+
+.icone {
+	font-size:20px;
+	text-align:center;
+}
+
+.entete {
+	display:none;
+}

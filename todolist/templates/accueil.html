@@ -1,0 +1,26 @@
+<form name="ajoutTodo" class="form-inline" ng-submit="addTodo()">
+	<div class="form-group">
+  		<textarea class="form-control" rows="2" cols="110" required name="texte" ng-model="texte"></textarea>
+	</div>
+	<div class="form-group">
+		<select class="form-control" id="select" required name="categorie" ng-model="categorie">
+			<option class="entete" value="">Catégorie</option>
+			<option ng-repeat="c in categories">{{c.categorie}}</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<select class="form-control" id="select" required name="importance" ng-model="importance">
+			<option class="entete" value="">Importance</option>
+			<option ng-repeat="i in importances">{{i.importance}}</option>
+		</select>
+	</div>
+	<button type="submit" class="btn btn-success">Valider</button>
+</form><br/>
+
+<ul class="content">
+	<li ng-repeat="m in messages" class="alert alert-{{m.importance}}" role="alert">
+		<div class="icone col-md-1"><span class="glyphicon glyphicon-{{m.glyphicon}}" aria-hidden="true"></span></div><!--
+		--><div class="col-md-10">{{m.texte}}</div><!--
+		--><div class="icone col-md-1"><button class="btn btn-primary glyphicon glyphicon-remove" aria-hidden="true" ng-click="deleteTodo(m.id)""></button></div>
+	</li>
+</ul>

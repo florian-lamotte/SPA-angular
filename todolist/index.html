@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>Todolist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header clearfix">
+	        <nav>
+	          	<ul class="nav nav-pills">
+	          		<li role="presentation"><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil</a></li>
+	            	<li role="presentation"><a href="#/travail"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Travail</a></li>
+	            	<li role="presentation"><a href="#/loisirs"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Loisirs</a></li>
+	            	<li role="presentation"><a href="#/culture"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Culture</a></li>
+	            	<li role="presentation"><a href="#/autres"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> Autres</a></li>
+	          	</ul>
+	        </nav>
+      	</div>
+
+      	<div ng-view></div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

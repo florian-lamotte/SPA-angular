@@ -1,0 +1,7 @@
+<ul class="content">
+	<li ng-repeat="m in messages | filter: {categorie:'loisirs'}" class="alert alert-{{m.importance}}" role="alert">
+		<div class="icone col-md-1"><span class="glyphicon glyphicon-{{m.glyphicon}}" aria-hidden="true"></span></div><!--
+		--><div class="col-md-10">{{m.texte}}</div><!--
+		--><div class="icone col-md-1"><button class="btn btn-primary glyphicon glyphicon-remove" aria-hidden="true" ng-click="deleteTodo(m.id)""></button></div>
+	</li>
+</ul>
